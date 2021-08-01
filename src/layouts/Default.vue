@@ -1,10 +1,14 @@
 <template>
   <div class="container-layout">
     <div>
-      <b-navbar type="is-primary" centered="true" class="navbar">
+      <b-navbar centered="true" type="is-primary" class="navbar">
         <template #start>
           <b-navbar-item tag="router-link" :to="{ path: '/' }">
             Home
+          </b-navbar-item>
+
+          <b-navbar-item tag="router-link" :to="{ path: '/hero/' }">
+            Hero
           </b-navbar-item>
         </template>
       </b-navbar>
